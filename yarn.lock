@@ -112,6 +112,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.16.17.tgz#c5a1a4bfe1b57f0c3e61b29883525c6da3e5c091"
   integrity sha512-y+EHuSchhL7FjHgvQL/0fnnFmO4T1bhvWANX6gcnqTjtnKWbTvUMCpGnv2+t+31d7RzyEAYAd4u2fnIhHL6N/Q==
 
+"@popperjs/core@^2.9.2":
+  version "2.11.6"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
+  integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
+
 "@tensorflow-models/body-pix@^2.1.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@tensorflow-models/body-pix/-/body-pix-2.2.0.tgz#96269095f35fb52fdf8529a81f59b97366f12173"
@@ -167,6 +172,13 @@
     "@tensorflow/tfjs-converter" "^3.2.0"
     "@tensorflow/tfjs-core" "^3.2.0"
 
+"@types/bootstrap@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-5.2.6.tgz#e861b3aa1f4a1434da0bf50fbaa372b6f7e64d2f"
+  integrity sha512-BlAc3YATdasbHoxMoBWODrSF6qwQO/E9X8wVxCCSa6rWjnaZfpkr2N6pUMCY6jj2+wf0muUtLySbvU9etX6YqA==
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+
 "@types/long@^4.0.1":
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.2.tgz#b74129719fc8d11c01868010082d483b7545591a"
@@ -201,6 +213,11 @@ available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
+
+bootstrap@5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.3.tgz#54739f4414de121b9785c5da3c87b37ff008322b"
+  integrity sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==
 
 call-bind@^1.0.2:
   version "1.0.2"
