@@ -101,19 +101,29 @@ if (virtualBackgroundButton && virtualBackgroundForm) {
     event.preventDefault();
     const options: any = {};
     const inputs = virtualBackgroundForm.elements;
-    // for (let item of Array.from(inputs)) {
+    console.log(inputs);
+
+    // for (let item of inputs) {
     //   item.valueAsNumber
     //     ? (options[item.id] = item.valueAsNumber)
     //     : (options[item.id] = item.value);
     // }
+    let item = inputs.maskBlurRadius
+    item.valueAsNumber
+      ? (options[item.id] = item.valueAsNumber)
+      : (options[item.id] = item.value);
     const itemVacation: any = inputs.namedItem('vacation')
     if (itemVacation) {
       itemVacation.valueAsNumber ? (options[itemVacation.id] = itemVacation.valueAsNumber) : options[itemVacation.id] = itemVacation.value
     }
 
+    console.log(options);
     let backgroundImage = images[options.backgroundImage];
 
-    let { maskBlurRadius, fitType } = options;
+
+    const maskBlurRadius = (inputs.namedItem('vacation')).valueAsNumber ? inputs.namedItem('vacation')?.valueAsNumber : inputs.namedItem('vacation')?.value
+    const fitType = inputs.namedItem('fitType')
+    // let { maskBlurRadius, fitType } = options;
     if (!virtualBackgroundProcessor) {
       virtualBackgroundProcessor = new VirtualBackgroundProcessor({
         assetsPath,
